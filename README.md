@@ -51,8 +51,9 @@ g++ Base3ToBinaryDecode.cpp -o decode
 ./decode  
 
 Future Work
-	•	Investigating how this encoding impacts compression ratios for Huffman Encoding.
-	•	Exploring variations that minimize bit-length increase while preserving compression benefits.
+	•	Investigating how this encoding impacts compression ratios for Huffman Encoding, Run Length Encoding.
+	•	Exploring a funciton f(x) such that f(base3tobase2encoding(n)) minimizes the output length.
+ 		Specifically, defining a secondary encoding step that will efficently compress long runs of 0s
 
 License
 
