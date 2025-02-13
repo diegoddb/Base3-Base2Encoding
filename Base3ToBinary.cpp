@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <algorithm>  // For reverse()
+#include <algorithm> 
 
 using namespace std;
 
@@ -15,8 +15,8 @@ vector<int> decimalToBase3(int n) {
     return base3;
 }
 
-// **Convert Base-3 Representation to Sparse Binary Encoding**
-void base3ToSparseBinary(int n) {
+// **Convert Base-3 Representation to Binary Encoding**
+void base3ToBinaryEncoding(int n) {
     vector<int> base3 = decimalToBase3(n);
 
     int len = base3.size();
@@ -28,11 +28,6 @@ void base3ToSparseBinary(int n) {
         if (base3[i] == 1) onesBits[i] = 1;  // Mark only 1s
         if (base3[i] == 2) twosBits[i] = 1;  // Mark only 2s
     }
-
-    // Print Base-3 Representation
-    cout << "Base-3: ";
-    for (int digit : base3) cout << digit;
-    cout << endl;
 
     // Print Binary Encoding
     cout << "Binary Encoding: ";
@@ -48,7 +43,8 @@ int main() {
     cout << "Enter a number: ";
     cin >> N;
 
-    base3ToSparseBinary(N);
+    base3ToBinaryEncoding(N);
 
     return 0;
 }
+
