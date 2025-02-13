@@ -6,7 +6,7 @@ we encode this in binary as a string 2*k digits long where,
 the first k digits tell you which indices are non-zero, and  
 the last k digits tell you which indices represent 2.
 
-Example: Input N = 55 -> Base3(N) = 201 -> Encoded(201) = 101 100
+Example: Input N = 55 -> Base3(N) = 2001 -> Encoded(201) = 1001 1000
 
 Explanation:  
 - `Base3(55) = 2001` (3-digit representation)  
