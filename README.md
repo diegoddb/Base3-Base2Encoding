@@ -10,7 +10,7 @@ Explanation:
 - **101** → Non-zero positions (1s mark where digits are nonzero)  
 - **100** → Indicates where the digit is **2**
 
-Note: In this example, Base2(55) = 110 111   while Encoded(Base3(55)) = 101 100,   so there is no change to the binary representation, but for higher N, this encoding actually increases the length of Ns binary representation, but introduces a different distribution of 0s and 1s that may optimize huffman encoding
+Note:   In this example, Base2(55) = 110 111   while Encoded(Base3(55)) = 101 100,   so there is no change to the binary representation, but for higher N, this encoding actually increases the length of Ns binary representation, but introduces a different distribution of 0s and 1s that may optimize huffman encoding
 
   
 ## License  
