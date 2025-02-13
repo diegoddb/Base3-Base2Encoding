@@ -2,7 +2,7 @@
 This project encodes the Base 3 representation of N as two binary strings.
 
 Given N,  we find a base 3 representation that is k digits long,  
-we encode this in binary as a string 2*k digits long where,  
+we decompose this in binary as a string 2*k digits long where,  
 the first k digits tell you which indices are non-zero, and  
 the last k digits tell you which indices represent 2.
 
@@ -10,7 +10,7 @@ Example: Input N = 55 -> Base3(N) = 2001 -> Encoded(201) = 1001 1000
 
 Explanation:  
 - `Base3(55) = 2001` (3-digit representation)  
-- `Encoded(201) = 1001 1000`  
+- `Base2Decomposition(2001) = 1001 1000`  
 - **1001** → Non-zero positions (1s mark where digits are nonzero)  
 - **1000** → Indicates where the digit is **2**
 
