@@ -5,17 +5,17 @@ More specifically, given N,  we find a base 3 representation that is k digits lo
 Example: Input N = 55 -> Base3(N) = 201 -> Encoded(201) = 101 100
 
 Explanation:  
-- `Base3(55) = 201` (3-digit representation)  
-- `Encoded(201) = 101 100`  
-- **101** → Non-zero positions (1s mark where digits are nonzero)  
-- **100** → Indicates where the digit is **2**
+- `Base3(55) = 2001` (3-digit representation)  
+- `Encoded(201) = 1001 1000`  
+- **1001** → Non-zero positions (1s mark where digits are nonzero)  
+- **1000** → Indicates where the digit is **2**
 
 Summary:
 In this example, Base2(55) = 110 111   
-while the Encoded(Base3(55)) = 101 100,
+while the Encoded(Base3(55)) = 1001 1000,
 
 Analysis:
-In this example there is no change to the binary representation, but for higher N, this encoding actually increases the length of Ns binary representation but introduces a different distribution of 0s and 1s that may optimize huffman encoding.
+In this example (as well as for higher N), the encoding increases the length of Ns binary representation but introduces a different distribution of 0s and 1s that may optimize other encodings such as Huffman Encoding,Run Length Encoding. 
 
   
 ## License  
