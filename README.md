@@ -1,6 +1,10 @@
 # Base3-Base2Encoding
 This project encodes the Base 3 representation of N as two binary strings.
-More specifically, given N,  we find a base 3 representation that is k digits long, which we encode in binary as a string 2*k digits long where the first k digits tell you which indices are non-zero and the last k digits tell you which indices represent 2.
+
+Given N,  we find a base 3 representation that is k digits long, 
+we encode this in binary as a string 2*k digits long where,
+the first k digits tell you which indices are non-zero, and
+the last k digits tell you which indices represent 2.
 
 Example: Input N = 55 -> Base3(N) = 201 -> Encoded(201) = 101 100
 
