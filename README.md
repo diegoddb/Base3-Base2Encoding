@@ -6,11 +6,11 @@ This project encodes the N by decomposing the Base 3 representation of N into tw
 
 Overview
 
-Given an integer N, we:
-	1.	Compute its Base 3 representation (which has k digits).
-	2.	Encode it as a 2k-bit binary string, where:
-	•	The first k bits indicate positions where digits are non-zero.
-	•	The last k bits indicate positions where the digit is 2.
+Given an integer N, we:  
+	1.	Compute its Base 3 representation (which has k digits).  
+	2.	Encode it as a 2k-bit binary string, where:  
+	•	The first k bits indicate positions where digits are non-zero.  
+	•	The last k bits indicate positions where the digit is 2.  
 
 Example 1
 
