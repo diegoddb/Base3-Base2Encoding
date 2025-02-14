@@ -1,4 +1,4 @@
-#Base3-Base2Encoding
+#Base3-Base3SplitEncoding
 
 This project encodes the N by decomposing the Base 3 representation of N into two binary strings.
 
