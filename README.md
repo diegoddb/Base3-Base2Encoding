@@ -1,6 +1,6 @@
-#Base3-Base3SplitEncoding
+#Base3SplitEncoding
 
-This project encodes the N by decomposing the Base 3 representation of N into two binary strings.
+This project encodes the value N by decomposing the Base 3 representation of N into two binary strings.
 
 ⚠ Note: This is not the direct Base 2 representation of N. Instead, this encoding transforms the Base 3 representation into a structured binary format using flags for 1s and 2s in the Base 3 Representation. 
 
@@ -8,9 +8,9 @@ Overview
 
 Given an integer N, we:  
 	1.	Compute its Base 3 representation (which has k digits).  
-	2.	Encode it as a 2k-bit binary string, where:  
-	•	The first k bits indicate positions where digits are non-zero.  
-	•	The last k bits indicate positions where the digit is 2.  
+	2.	Encode it split into 2, k-bit binary strings, where:  
+	•	The first k bits indicate positions where the digits are 1.  
+	•	The last k bits indicate positions where the digits are 2.  
 
 Example 1
 
@@ -21,7 +21,7 @@ Encoded: 0001 1000
 Explanation  
 	•	Base3(55) = 2001 (4-digit representation)  
 	•	Base2Decomposition(2001) = 0001 1000  
-	•	0001 → Marks non-zero positions  
+	•	0001 → Marks position in Base3(55) that are 1
 	•	1000 → Marks positions where the digit is 2
 
 Binary Representation Comparison
@@ -52,12 +52,12 @@ g++ Base3ToBinaryDecode.cpp -o decode
 
 Future Work  
 	•	Investigating how this encoding impacts compression ratios for Huffman Encoding, Run Length Encoding.  
-	•	Exploring a function f(x) such that f(base3tobase2encoding(n)) minimizes the output length.  
+	•	Exploring a function f(x) such that f(encoding(n)) minimizes the output length.  
  		Specifically, defining a secondary encoding step that will efficently compress this distribution
    		ie Mathematically find range of possible permutations of 0s,1s (for one, only even length strings are in range)
      		, analyze things like the frequency in terms of runs of 0s,1s 
        		and analyze the values which are out of range or impossible to get 
-	 	For example, Base3ToBinaryEncode(n)= 11 11 is impossible, base3(n) cant have 1s and 2s in the same location
+	 	For example, Encode(n)= 11 11 is impossible, base3(n) cant have 1s and 2s in the same location
 	 	or any odd length string is impossible in our encoding. 
 
 License
