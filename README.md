@@ -2,7 +2,7 @@
 
 This project encodes the N by decomposing the Base 3 representation of N into two binary strings.
 
-⚠ Note: This is not the direct Base 2 representation of N. Instead, this encoding transforms the Base 3 representation into a structured binary format that may optimize further compression techniques like Huffman Encoding.
+⚠ Note: This is not the direct Base 2 representation of N. Instead, this encoding transforms the Base 3 representation into a structured binary format using flags for 1s and 2s in the Base 3 Representation. 
 
 Overview
 
