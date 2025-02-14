@@ -1,6 +1,6 @@
 #Base3-Base2Encoding
 
-This project encodes the Base 3 representation of N as two binary strings.
+This project encodes the N by decomposing the Base 3 representation of N into two binary strings.
 
 ⚠ Note: This is not the direct Base 2 representation of N. Instead, this encoding transforms the Base 3 representation into a structured binary format that may optimize further compression techniques like Huffman Encoding.
 
@@ -55,8 +55,9 @@ Future Work
 	•	Exploring a function f(x) such that f(base3tobase2encoding(n)) minimizes the output length.  
  		Specifically, defining a secondary encoding step that will efficently compress this distribution
    		ie Mathematically find range of possible permutations of 0s,1s (for one, only even length strings are in range)
-     		and their frequency in terms of runs of 0s,1s 
-       		and the values which are out of range or impossible to get like 1111 is impossible, it cant have 1s and 2s
+     		, analyze things like the frequency in terms of runs of 0s,1s 
+       		and analyze the values which are out of range or impossible to get 
+	 	For example, Base3ToBinaryEncode(n)= 11 11 is impossible, base3(n) cant have 1s and 2s in the same location
 	 	or any odd length string is impossible in our encoding. 
 
 License
