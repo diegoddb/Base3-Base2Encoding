@@ -18,10 +18,10 @@ Input:  N = 55
 Base 3: 2001
 Encoded: 0001 1000
 
-Explanation
-	•	Base3(55) = 2001 (4-digit representation)
-	•	Base2Decomposition(2001) = 0001 1000
-	•	0001 → Marks non-zero positions
+Explanation  
+	•	Base3(55) = 2001 (4-digit representation)  
+	•	Base2Decomposition(2001) = 0001 1000  
+	•	0001 → Marks non-zero positions  
 	•	1000 → Marks positions where the digit is 2
 
 Binary Representation Comparison
