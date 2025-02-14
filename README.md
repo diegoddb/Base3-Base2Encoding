@@ -52,8 +52,12 @@ g++ Base3ToBinaryDecode.cpp -o decode
 
 Future Work  
 	•	Investigating how this encoding impacts compression ratios for Huffman Encoding, Run Length Encoding.  
-	•	Exploring a funciton f(x) such that f(base3tobase2encoding(n)) minimizes the output length.  
- 		Specifically, defining a secondary encoding step that will efficently compress long runs of 0s  
+	•	Exploring a function f(x) such that f(base3tobase2encoding(n)) minimizes the output length.  
+ 		Specifically, defining a secondary encoding step that will efficently compress this distribution
+   		ie Mathematically find range of possible permutations of 0s,1s (for one, only even length strings are in range)
+     		and their frequency in terms of runs of 0s,1s 
+       		and the values which are out of range or impossible to get like 1111 is impossible, it cant have 1s and 2s
+	 	or any odd length string is impossible in our encoding. 
 
 License
 
